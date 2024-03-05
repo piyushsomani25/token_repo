@@ -6,8 +6,8 @@
     <title>Token Display Page</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f0f0;
             margin: 0;
             padding: 0;
             display: flex;
@@ -26,14 +26,23 @@
         }
         h1 {
             color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
         #tokenBox {
             background-color: #f9f9f9;
             border: 1px solid #ccc;
             border-radius: 4px;
-            padding: 10px;
+            padding: 15px;
             margin-top: 20px;
-            font-size: 18px;
+            font-size: 16px;
+            word-wrap: break-word; /* Wrap text when it exceeds the width of the box */
+            display: inline-block; /* Allow the box width to expand based on content length */
+            max-width: 300px;
+            overflow-wrap: break-word; /* Handle long words */
+            line-height: 1.5; /* Ensure proper line spacing */
+            text-align: left; /* Align text to the left */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font family */
         }
     </style>
 </head>
